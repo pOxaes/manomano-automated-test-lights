@@ -92,7 +92,7 @@ class HueBridge {
 
       try {
         const data = { devicetype: HUE_USERNAME };
-        const response = await fetch(`http://${this.serverIP}/api`, {
+        const response = await fetch(`http://${this.ip}/api`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json" }
